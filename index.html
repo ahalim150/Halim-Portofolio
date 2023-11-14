@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ahmed Halim - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Ahmed Halim
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          ahmedabdelhalim150@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +201119745824
+
+        </div>
+        </div>
+        <div class="topdiv">
+            <a class="topmenu" href="#about-me">About Me</a>
+            <a class="topmenu" href="#skills">Skills</a>
+            <a class="topmenu" href="#projects">Projects</a>
+            <a class="topmenu" href="#recommendations">recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://media.licdn.com/dms/image/C5603AQGhUyM6PizYZQ/profile-displayphoto-shrink_200_200/0/1650953895672?e=1705536000&v=beta&t=IMoxgpiHVLhYMiq9O3YmmSJu2P16_yhUmEj9pJWFNnw" class="profile_image" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Ahmed Halim! <img src="https://www.pngfind.com/pngs/m/28-288401_waving-hand-emoji-svg-png-download-emoji-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a full stack web developer Engineer with less than 1 year of experience in web development.
+            I have worked on automation and control systems such as PLC, HMI and SCADA. 
+            I am an avid user of Siemens Services and have worked on S7-200, S7-300, S7400, S7-1200, S7-1500 and LOGO!.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>1 years experience</p>
+        </div>  
+        
+        <div class="skill">
+            <img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-css-logo-png-transparent-svg-vector-bie-supply-9.png"/>
+            <h6>CSS</h6>
+            <p>1 years experience</p>
+          </div> 
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>1 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+            <div class="project-card">
+                <h3>TV Production Line</h3>
+                <ul>
+                  <li>upgrading an old stopped tv production line to PLC instead of boards</li>
+                </ul>
+              </div>
+              <hr>
+              <div class="project-card">
+                <h3>injection machine</h3>
+                <ul>
+                  <li>Modifying a Plastic Injection Molding Machine from boards to PLC & HMI</li>
+                </ul>
+              </div>
+              <hr>
+              <div class="project-card">
+                <h3>Mixing machine</h3>
+                <ul>
+                  <li>
+                    Design & Installation of Color Mixing Machine with a Filling Production Line</li>
+                </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Ahmed was one of the best students I taught and supervised. I believe he can be a valuable asset to any organization
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I recommend Eng Ahmed as an active special engineer to depend on him in leading maintenance team to solve electrical control systems problems and put the fast right solution for them by his team or by himself 
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+            <span>&#8220;</span>
+            Ahmed has shown great cooperation during our time working together, he is dedicated and well-rounded about his job , an added value to any company he works with.
+            <span>&#8221;</span>
+          </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks for leaving a recommendation</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
